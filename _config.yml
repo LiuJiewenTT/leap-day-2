@@ -4,7 +4,7 @@ project:
   show_downloads: false
 allow_download_doc: true
 google_analytics:
-theme: .
+theme: leap-day-2
 
 sass:
   load_paths:
