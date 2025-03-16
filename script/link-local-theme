@@ -3,8 +3,9 @@
 set -e
 
 echo cwd: $(pwd)
-mkdir -p ./_themes
+mkdir -p ./_themes/leap-day-2
 ls -al
-ln -s . ./_themes/leap-day-2
+# ln -s . ./_themes/leap-day-2
+cp -r _includes _layouts _sass assets LICENSE README.md  ./_themes/leap-day-2/
 ls -al ./_themes/
 ls -al ./_themes/leap-day-2/.
