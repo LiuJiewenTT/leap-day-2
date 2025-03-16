@@ -5,5 +5,8 @@
 
 <!-- You can set your favicon here -->
 <!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
+{%- if page.layout_type == "non-project-document" -%}
+    <link rel="stylesheet" href="{{ '/assets/css/non-project-document-style.css' | relative_url }}">
+{%- endif -%}
 
 <!-- end custom head snippets -->

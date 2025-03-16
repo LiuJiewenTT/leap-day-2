@@ -1,19 +1,20 @@
-var sectionHeight = function() {
+var mainSectionHeight = function() {
   var total    = $(window).height(),
-      $section = $('section').css('height','auto');
+      $main_section = $('section.main-section').css('height','auto'); // 用于获取自然高度
 
-  if ($section.outerHeight(true) < total) {
-    var margin = $section.outerHeight(true) - $section.height();
-    $section.height(total - margin - 20);
+  if ($main_section.outerHeight(true) < total) {
+    var margin = $main_section.outerHeight(true) - $main_section.height();
+    $main_section.height(total - margin - 20);  // 额外预留20px
   } else {
-    $section.css('height','auto');
+    $main_section.css('height','auto');
   }
 }
 
-$(window).resize(sectionHeight);
+$(window).resize(mainSectionHeight);
 
+// 创建导航
 $(function() {
-  $("section h1, section h2, section h3").each(function(){
+  $("section.main-section h1, section.main-section h2, section.main-section h3").each(function(){
     $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
     $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
     $("nav ul li:first-child a").parent().addClass("active");
@@ -27,7 +28,7 @@ $(function() {
     event.preventDefault();
   });
 
-  sectionHeight();
+  mainSectionHeight();
 
-  $('img').on('load', sectionHeight);
+  $('img').on('load', mainSectionHeight); // 每当有图片加载完，就重新计算高度
 });
