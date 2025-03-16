@@ -2,9 +2,7 @@
 
 set -e
 
-pwd
 echo cwd: $(cwd)
-echo dir:
 ls -al
 mkdir ./_themes
 ln -s . ./_themes/leap-day-2/
