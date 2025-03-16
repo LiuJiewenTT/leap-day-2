@@ -6,4 +6,6 @@ allow_download_doc: true
 google_analytics:
 
 sass:
-  sass_dir: assets/css
+  sass_dir: 
+    - _sass
+    - assets/css
