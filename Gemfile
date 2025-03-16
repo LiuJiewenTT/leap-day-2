@@ -17,8 +17,5 @@ gem "jekyll-default-layout"
 gem "jekyll-titles-from-headings"
 gem "kramdown-parser-gfm"
 
-gem "htmlproofer"
-gem "w3c_validators"
-
 
 gemspec
