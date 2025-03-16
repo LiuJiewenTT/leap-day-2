@@ -50,7 +50,7 @@ jobs:
       - name: verify
         run: |
           cd ..
-          BUNDLE_GEMFILE = "leap-day-2/Gemfile"
+          export BUNDLE_GEMFILE=leap-day-2/Gemfile
           bundle exec htmlproofer leap-day-2/./_site --check-html --check-sri --typhoeus-config='{"headers":{"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0"}}'
           bundle exec leap-day-2/./script/validate-html
 
