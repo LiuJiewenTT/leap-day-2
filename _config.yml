@@ -4,8 +4,3 @@ project:
   show_downloads: false
 allow_download_doc: true
 google_analytics:
-
-sass:
-  sass_dir: 
-    - _sass
-    - assets/css
