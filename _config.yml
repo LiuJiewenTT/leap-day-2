@@ -2,5 +2,11 @@ title: Leap Day 2 theme
 description: Leap Day 2 is a personally customized theme for GitHub Pages.
 project:
   show_downloads: false
+allow_download_doc: true
 google_analytics:
 theme: jekyll-theme-leap-day
+
+sass:
+  load_paths:
+    - _sass
+    - assets/css

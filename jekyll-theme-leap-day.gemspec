@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-leap-day"
-  s.version       = "0.2.0"
+  s.version       = "0.2.1"
   s.license       = "CC0-1.0"
   s.authors       = ["Matt Graham", "GitHub, Inc."]
   s.email         = ["opensource+jekyll-theme-leap-day@github.com"]
-  s.homepage      = "https://github.com/pages-themes/leap-day"
+  s.homepage      = "https://github.com/LiuJiewenTT/leap-day-2"
   s.summary       = "Leap Day is a Jekyll theme for GitHub Pages"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|

@@ -1,6 +1,7 @@
 ---
 layout: default
 layout_type: non-project-document
+allow_download_doc: true
 ---
 
 ## Welcome to another page
