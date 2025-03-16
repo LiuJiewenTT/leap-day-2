@@ -4,7 +4,7 @@ project:
   show_downloads: false
 allow_download_doc: true
 google_analytics:
-theme: null
+theme:
 include:
   - _layouts
   - _includes
