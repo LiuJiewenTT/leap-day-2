@@ -4,7 +4,12 @@ project:
   show_downloads: false
 allow_download_doc: true
 google_analytics:
-theme: "."
+theme: null
+include:
+  - _layouts
+  - _includes
+  - _sass
+  - assets/css
 
 sass:
   load_paths:
