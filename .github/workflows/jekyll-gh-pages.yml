@@ -32,6 +32,12 @@ jobs:
           echo "LC_ALL=en_US.UTF-8" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4
+      - name: chmod link local theme
+        run: |
+          pwd
+          ls -la
+          chmod a+x script/link-local-theme
+          ls -la script/
       - name: link local theme
         run: script/link-local-theme
       - name: Setup Pages
