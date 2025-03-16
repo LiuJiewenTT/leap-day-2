@@ -14,7 +14,10 @@ jobs:
           echo "LC_ALL=en_US.UTF-8" >> $GITHUB_ENV
       - uses: actions/checkout@v2
       - name: chmod link local theme
-        run: chmod +x script/link-local-theme
+        run: |
+          pwd
+          ls -la
+          chmod +x script/link-local-theme
       - name: link local theme
         run: script/link-local-theme
       - uses: ruby/setup-ruby@v1
