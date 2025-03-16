@@ -49,7 +49,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
       - name: verify
         run: |
-          ln -s _site/ leap-day-2/
+          ls -la
+          ln -s _site leap-day-2
           bundle exec htmlproofer ./leap-day-2 --check-html --check-sri --typhoeus-config='{"headers":{"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0"}}'
           bundle exec script/validate-html
 
