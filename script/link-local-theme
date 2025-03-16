@@ -7,4 +7,4 @@ mkdir -p ./_themes
 ls -al
 ln -s . ./_themes/leap-day-2
 ls -al ./_themes/
-ls -al ./_themes/leap-day-2/
+ls -al ./_themes/leap-day-2/.
