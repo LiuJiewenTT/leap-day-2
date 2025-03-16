@@ -2,6 +2,8 @@
 
 set -e
 
+echo installing dependencies...
 gem install bundler
+echo installing gems...
 bundle install
 bundle update
