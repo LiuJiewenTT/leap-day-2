@@ -1,4 +1,15 @@
 ---
 ---
 
-@import 'isolated/non-project-document-style';
+// 增量
+
+footer {
+    position: relative;
+    width: auto;
+    bottom: 0;
+    margin-left: 0;
+    text-align: right;
+    left: 0;
+    width: 100%;
+}
+
