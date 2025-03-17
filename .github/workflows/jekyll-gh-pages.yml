@@ -32,8 +32,14 @@ jobs:
           echo "LC_ALL=en_US.UTF-8" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2.0
+          bundler-cache: true
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: bootstrap
+        run: script/bootstrap
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -48,8 +54,8 @@ jobs:
           gem install w3c_validators
           mkdir _site_rw
           ln -s _site _site_rw/leap-day-2
-          htmlproofer ./_site_rw --check-html --check-sri --typhoeus-config='{"headers":{"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0"}}'
-          sh script/validate-html
+          bundle exec htmlproofer ./_site_rw --check-html --check-sri --typhoeus-config='{"headers":{"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0"}}'
+          bundle exec script/validate-html
 
   # Deployment job
   deploy:
