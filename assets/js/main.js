@@ -1,6 +1,6 @@
 var mainSectionHeight = function() {
   var total    = $(window).height(),
-      $main_section = $('section.main-section').css('height','auto'); // 用于获取自然高度
+      $main_section = $('.main-section').css('height','auto'); // 用于获取自然高度
 
   if ($main_section.outerHeight(true) < total) {
     var margin = $main_section.outerHeight(true) - $main_section.height();
@@ -14,7 +14,7 @@ $(window).resize(mainSectionHeight);
 
 // 创建导航
 $(function() {
-  $("section.main-section h1, section.main-section h2, section.main-section h3").each(function(){
+  $(".main-section h1, .main-section h2, .main-section h3").each(function(){
     $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
     $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
     $("nav ul li:first-child a").parent().addClass("active");
