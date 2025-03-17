@@ -1,0 +1,26 @@
+{% capture page_var_status_report %}
+<style>
+    .page_var_status_report {
+        background-color: aliceblue;
+    }
+</style>
+
+<div class=".page_var_status_report">
+    <p>
+        allow_download_doc of the site is: {{ site.allow_download_doc }}<br>
+        allow_download_doc of this page is: {{ page.allow_download_doc }}<br>
+        allow_download_doc preset requirements status is: {{ allow_download_doc }}<br>
+        {% if site.allow_download_doc and allow_download_doc and page.allow_download_doc -%}
+            allow_download_doc final result status is: true<br>
+        {%- else -%}
+            allow_download_doc final result status is: false<br>
+        {%- endif %}
+        <br>
+    </p>
+
+    <p>
+        site.project.show_downloads: {{ site.project.show_downloads }}<br>
+        layout_type of this page is: {{ page.layout_type }}<br>
+    </p>
+</div>
+{% endcapture %}

@@ -121,3 +121,6 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+{% include page_var_status_report.liquid %}
+{{ page_var_status_report }}

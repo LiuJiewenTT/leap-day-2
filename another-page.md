@@ -8,6 +8,7 @@ allow_download_doc: true
 
 _yay_
 
-layout_type of this page is: {{ page.layout_type }}
+{% include page_var_status_report.liquid %}
+{{ page_var_status_report }}
 
 [back](./)
