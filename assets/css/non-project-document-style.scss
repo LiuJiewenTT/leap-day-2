@@ -1,14 +1,6 @@
 ---
 ---
-
-@import "jekyll-theme-leap-day";
-
-
-#banner {
-    right: 15%;
-    margin-right: 0;
-}
-
+// 增量
 
 footer {
     position: relative;
@@ -16,5 +8,7 @@ footer {
     bottom: 0;
     margin-left: 0;
     text-align: right;
+    left: 0;
+    width: 100%;
 }
 

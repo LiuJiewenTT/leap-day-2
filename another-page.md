@@ -8,4 +8,6 @@ allow_download_doc: true
 
 _yay_
 
+layout_type of this page is: {{ page.layout_type }}
+
 [back](./)
