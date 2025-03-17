@@ -44,6 +44,8 @@ jobs:
       - name: verify
         run: |
           ls -la
+          gem install htmlproofer
+          gem install w3c_validators
           mkdir _site_rw
           ln -s _site _site_rw/leap-day-2
           htmlproofer ./_site_rw --check-html --check-sri --typhoeus-config='{"headers":{"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0"}}'
