@@ -44,7 +44,7 @@ jobs:
       - name: verify
         run: |
           ls -la
-          gem install htmlproofer
+          gem install html-proofer
           gem install w3c_validators
           mkdir _site_rw
           ln -s _site _site_rw/leap-day-2
