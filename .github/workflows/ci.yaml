@@ -1,7 +1,8 @@
 on:
-  # push:
-  # pull_request:
-    # types: [opened, synchronize]
+  push: 
+    branches: ["master"]
+  pull_request:
+    types: [opened, synchronize]
   workflow_dispatch:
 jobs:
   build:
@@ -19,7 +20,16 @@ jobs:
           bundler-cache: true
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Setup Gemfile
+        run: |
+          mv Gemfile Gemfile.bak
+          mv Gemfile_for_gh_ci Gemfile
       - name: build
         run: script/bootstrap
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
       - name: test
-        run: script/cibuild
+        run: script/civerify_for_gh
