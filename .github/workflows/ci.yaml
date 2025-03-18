@@ -24,6 +24,7 @@ jobs:
         run: |
           mv Gemfile Gemfile.bak
           mv Gemfile_for_gh_ci Gemfile
+          chmod u+x script/civerify_for_gh
       - name: build
         run: script/bootstrap
       - name: Build with Jekyll
