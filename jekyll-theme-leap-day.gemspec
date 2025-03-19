@@ -4,10 +4,10 @@ Gem::Specification.new do |s|
   s.name          = "jekyll-theme-leap-day-2"
   s.version       = "0.2.1"
   s.license       = "CC0-1.0"
-  s.authors       = ["Matt Graham", "GitHub, Inc."]
-  s.email         = ["opensource+jekyll-theme-leap-day@github.com"]
+  s.authors       = ["Matt Graham", "GitHub, Inc.", "LiuJiewenTT"]
+  s.email         = ["liuljwtt@163.com"]
   s.homepage      = "https://github.com/LiuJiewenTT/leap-day-2"
-  s.summary       = "Leap Day is a Jekyll theme for GitHub Pages"
+  s.summary       = "Leap Day 2 is a personally customized Jekyll theme for GitHub Pages"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
