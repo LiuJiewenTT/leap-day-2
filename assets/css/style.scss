@@ -5,7 +5,7 @@
 
 // 增量
 
-@media print, screen and not(max-width: 1060px) {
+@media print, screen and (min-width: 1061px) {
 	footer {
 		left: 25%;
 		margin-left: -25%;
