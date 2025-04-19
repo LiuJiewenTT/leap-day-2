@@ -6,6 +6,8 @@
 [![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/LiuJiewenTT/leap-day-2/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/LiuJiewenTT/leap-day-2/actions/workflows/jekyll-gh-pages.yml) 
 <!-- [![Gem Version](https://badge.fury.io/rb/jekyll-theme-leap-day.svg)](https://badge.fury.io/rb/jekyll-theme-leap-day) -->
 
+<img alt="GitHub Release" src="https://img.shields.io/github/v/tag/LiuJiewenTT/leap-day-2">
+
 *Leap day 2 is a personally customized Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/leap-day), or even [use it today](#usage).*
 
 ![Thumbnail of Leap day](thumbnail.png)
